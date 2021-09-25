@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     template: `
         <footer>
             <small class="flex-container text-dark">
-            <p>All rights reserved: &copy; Integral 2019</p>
+              <p>All rights reserved: &copy; Integral 2019</p>
             </small>
         </footer>
     `,
@@ -14,12 +14,17 @@ import { Component } from '@angular/core';
                 .flex-container{
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
                     align-item: center;
+                    justify-content: center;
                     height: 100px;
                     background: #f1f1f1;
-                    padding-top: 5%;
                     width: 100%;
+                    padding: 50px;
+                    position: fixed;
+                    bottom: 0;
+                }
+                .flex-container p {
+                   text-align: center; 
                 }
             `]
 })
